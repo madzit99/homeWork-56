@@ -9,4 +9,11 @@ export interface IngredientProps {
     cost:number;
     img:string;
     // total:number;
-}
+    onAdd: () => void;
+    onDelete: () => void;
+}; 
+
+export interface StateIngredient {
+    name:string;
+    count:number;
+};
