@@ -1,13 +1,12 @@
-import { StateIngredient } from "../types";
+import React from 'react';
+import { StateIngredient } from '../types';
 
-const IngredientContent:React.FC<StateIngredient> = ({name, count}) => {
-    const ingredientDivs = [];
-    
-    for (let i = 0; i > count; i++) {
-        ingredientDivs.push(<div className={name}></div>)
-    };
+const IbgredientContent: React.FC<StateIngredient> = ({name, count}) => {
+  const ingredientDivs = [];
+  for (let i = 0; i < count; i++) {
+    ingredientDivs.push(<div key={`${name}-${i}`} className={name}></div>);
+  }
+  return ingredientDivs;
+};
 
-    return ingredientDivs;
-}
-
-export default IngredientContent;
+export default IbgredientContent;

@@ -8,7 +8,7 @@ export interface IngredientProps {
     name: string;
     cost:number;
     img:string;
-    // total:number;
+    total:number;
     onAdd: () => void;
     onDelete: () => void;
 }; 
